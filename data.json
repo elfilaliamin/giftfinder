@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "Title": "Sannicolau Mare T-Shirt",
+        "type": " T-Shirt",
+        "Tags": "romania,city",
+        "thumnail": "https://images.teepublic.com/derived/production/designs/88272933_0/1772194164/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "link": "https://www.teepublic.com/t-shirt/88272933-sannicolau-mare?store_id=2739131",
+        "platform": "Teepublic"
+    },
+    {
+        "id": 2,
+        "Title": "Swansea T-Shirt",
+        "type": " T-Shirt",
+        "Tags": "wales,city",
+        "thumnail": "https://images.teepublic.com/derived/production/designs/47496264_0/1688677353/i_m:bi_production_blanks_ipv78ghaupktk9ogkdxg_1462829019,c_12_0_447x,s_630,q_90.jpg",
+        "link": "https://www.teepublic.com/t-shirt/47496264-swansea?store_id=2739131",
+        "platform": "Teepublic"
+    },
+    {
+        "id": 3,
+        "Title": "Ceska Trebova T-Shirt",
+        "type": " T-Shirt",
+        "Tags": "czech republic,city",
+        "thumnail": "https://images.teepublic.com/derived/production/designs/48686638_0/1690929948/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_7_0_456x,s_630,q_90.jpg",
+        "link": "https://www.teepublic.com/t-shirt/48686638-ceska-trebova?store_id=2739131",
+        "platform": "Teepublic"
+    }
+]

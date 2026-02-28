@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gift Finder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <h1 class="logo">Gift Finder</h1>
+
+      <div class="searchbar">
+        <input id="searchInput" type="search" placeholder="Search gifts..." autocomplete="off" />
+        <button id="searchBtn" class="btn btn--primary" type="button">Search</button>
+        <button id="clearBtn" class="btn" type="button">Clear</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <aside class="sidebar">
+      <div class="panel">
+        <button id="toggleFiltersBtn" class="filters-toggle" type="button" aria-expanded="true">
+          <span>Filters</span>
+          <span id="toggleIcon" class="chev">▾</span>
+        </button>
+
+        <div id="filtersBody" class="filters-body">
+          <div class="panel__row">
+            <button id="resetFiltersBtn" type="button" class="btn btn--ghost">Reset filters</button>
+
+            <label class="inline">
+              Per page
+              <select id="pageSizeSelect">
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100" selected>100</option>
+                <option value="200">200</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Product Type</h3>
+            <div id="typeFilters" class="checks"></div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Platform</h3>
+            <div id="platformFilters" class="checks"></div>
+          </div>
+        </div>
+
+        <div class="meta">
+          <div><span id="totalCount">0</span> items</div>
+          <div><span id="matchCount">0</span> matches</div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div id="status" class="status"></div>
+
+      <div id="resultsHeader" class="results-header hidden">
+        <div class="pager">
+          <button id="prevBtn" class="btn" type="button">Prev</button>
+          <span id="pageInfo" class="pageinfo">Page 1 / 1</span>
+          <button id="nextBtn" class="btn" type="button">Next</button>
+        </div>
+
+        <div class="jumper">
+          <label class="inline">
+            Go to page
+            <input id="gotoPageInput" type="number" min="1" step="1" />
+          </label>
+          <button id="gotoBtn" class="btn" type="button">Go</button>
+        </div>
+      </div>
+
+      <div id="results" class="grid"></div>
+
+      <div id="emptyState" class="empty">
+        <h2>Search to see results</h2>
+        <p>Type a keyword, choose filters, then click <b>Search</b>.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
